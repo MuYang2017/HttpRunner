@@ -47,6 +47,12 @@ class FunctionNotFound(NotFoundError):
 class VariableNotFound(NotFoundError):
     pass
 
+class EnvNotFound(NotFoundError):
+    pass
+
+class CSVNotFound(NotFoundError):
+    pass
+
 class ApiNotFound(NotFoundError):
     pass
 
