@@ -1,5 +1,42 @@
 # Release History
 
+## 2.1.2 (2019-04-17)
+
+**Features**
+
+- support new variable notation ${var}
+- use \$\$ to escape \$ notation
+- add Python 3.7 for travis CI
+
+**Bugfixes**
+
+- match duplicate variable/function in single raw string
+- escape '{' and '}' notation in raw string
+- print_info: TypeError when value is None
+- display api name when running api as testcase
+
+## 2.1.1 (2019-04-11)
+
+**Features**
+
+refactor upload files mechanism with [requests-toolbelt](https://toolbelt.readthedocs.io/en/latest/user.html#multipart-form-data-encoder):
+
+- simplify usage syntax, detect mimetype with [filetype](https://github.com/h2non/filetype.py).
+- support upload multiple fields.
+
+## 2.1.0 (2019-04-10)
+
+**Features**
+
+- implement json dump Python objects when save tests
+- implement lazy parser
+- remove project_mapping from parse_tests result
+
+**Bugfixes**
+
+- reference output variables
+- pass output variables between testcases
+
 ## 2.0.6 (2019-03-18)
 
 **Features**
